@@ -15,6 +15,7 @@ public class ProductRepo {
     }
 
     public boolean queryProduct(Product product){
+        products.
         return products.contains(product);
     }
 
