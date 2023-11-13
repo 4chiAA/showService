@@ -14,4 +14,8 @@ public class ProductRepo {
         products.remove(product);
     }
 
+    public boolean queryProduct(Product product){
+        return products.contains(product);
+    }
+
 }
