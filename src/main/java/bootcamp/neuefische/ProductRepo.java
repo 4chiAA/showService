@@ -8,14 +8,16 @@ public class ProductRepo {
 
     public void addProduct(Product product){
         products.add(product);
+
     }
 
     public void removeProduct(Product product){
-        products.remove(product);
+        if(queryProduct(product)){
+            products.remove(product);
+        }
     }
 
     public boolean queryProduct(Product product){
-        products.
         return products.contains(product);
     }
 

@@ -1,12 +1,15 @@
 package bootcamp.neuefische;
 
-public record Order(String name, String type) {
+import java.util.List;
 
-    public String getName(){
-        return name;
+
+public record Order(int id, List<Product> products) {
+
+    public int getID(){
+        return id;
     }
 
-    public String getType(){
-        return type;
+    public List<Product> getOrder(){
+        return products;
     }
 }
